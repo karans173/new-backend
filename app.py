@@ -130,7 +130,7 @@ from AI_Model.pipeline import run_stock_prediction, analyze_trend
 import pandas as pd
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": ["http://localhost:8080"]}})
 
 def convert_types(obj):
     if isinstance(obj, dict):
