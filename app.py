@@ -14,7 +14,8 @@ sys.path.append(os.path.join(base_dir, "AI_Model"))
 
 # Agent imports
 from ai_agents.yfinance_agent import fetch_stock_data
-from ai_agents.gemini_agent import get_news_summaryimport os
+from ai_agents.gemini_agent import get_news_summary
+import os
 import sys
 import time
 from flask import Flask, request, jsonify
